@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.lato{
+  font-family: "Lato", sans-serif;
+    &-thin{
+        font-weight: 100;
+        font-style: normal;
+        &-italic{
+            font-style: italic;
+        }
+    }
+    &-light {
+        font-weight: 300;
+        font-style: normal;
+        &-italic{
+            font-style: italic;
+        }
+    }
+    &-regular {
+        font-weight: 400;
+        font-style: normal;
+        &-italic{
+            font-style: italic;
+        }
+    }
+    &-bold {
+        font-weight: 700;
+        font-style: normal;
+        &-italic{
+            font-style: italic;
+        }
+    }
+    &-black {
+        font-weight: 900;
+        font-style: normal;
+        &-italic{
+            font-style: italic;
+        }
+    }
+}
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+@mixin roboto($WEIGHT){
+    @extend .roboto;
+    font-weight: $WEIGHT;
+}
+@mixin font-size($value) {
+      font-size: pxToRem($value)+rem;
+}

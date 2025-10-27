@@ -1,0 +1,37 @@
+@import "reset";
+@import "functions";
+@import "bootstrap/scss/bootstrap";
+@import "variables";
+@import "fonts";
+
+@import "components/components";
+@import "pages/pages";
+
+
+$enable-gradients: true;
+$enable-shadows: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// Include functions first
+@import "bootstrap/scss/functions";
+
+body {
+  @include roboto(100);
+  @include media-breakpoint-up(sm) { 
+    font-size: 16px;
+   }
+  @include media-breakpoint-up(md) { 
+    font-size: 16px;
+   }
+  @include media-breakpoint-up(lg) { 
+    font-size: 16px;
+   }
+  @include media-breakpoint-up(xl) { 
+    font-size: 16px;
+   }
+  @include media-breakpoint-up(xxl) { 
+    font-size: 16px;
+   }
+}
+
