@@ -49,3 +49,59 @@ header{
         }
     }
 }
+.jumbotron{
+    background-color: $background-dark;
+    color: white;
+    .carousel {
+        &-inner {
+            min-height: 100px;
+            float: none;
+            @include media-breakpoint-up(sm) { 
+                max-height: 250px;
+               }
+              @include media-breakpoint-up(md) { 
+                max-height: 500px;
+               }
+              @include media-breakpoint-up(lg) { 
+                max-height: 711px;
+               }
+              @include media-breakpoint-up(xl) { 
+                max-height: 711px;
+               }
+              @include media-breakpoint-up(xxl) { 
+                max-height: 711px;
+               }
+        }
+        &-item {
+            float: none;
+            margin-right: 0;
+            &-next:not(.carousel-item-start){
+                transform: translateY(100%) !important;
+            }
+            &-prev:not(.carousel-item-end){
+                transform: translateY(-100%) !important;
+            }
+        }
+        &-indicators{
+            align-items: center;
+            flex-direction: column;
+            width: 20px;
+            margin-left: 0;
+            margin-right: 36px;
+            left: inherit;
+            bottom: inherit;
+            top: calc(50% - 52px);
+            button{
+                background-color: $lighten-grey-2;
+                border-radius: 50%;
+                height: 12px;
+                width: 12px;
+                &.active {
+                    background-color: $backgraund-cyan;
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+    }
+}

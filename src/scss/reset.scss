@@ -348,3 +348,25 @@ template {
 [hidden] {
   display: none;
 }
+
+/* Carousel vertical fix */
+.carousel-item {
+  transition: transform 1s ease-in-out !important;
+  height: 100vh; 
+}
+
+.carousel-item.active.carousel-item-start {
+  transform: translateY(-100%) !important;
+}
+.carousel-item.carousel-item-next {
+  transform: translateY(100%) !important;
+}
+.carousel-item.carousel-item-next.carousel-item-start {
+  transform: translateY(0%) !important;
+}
+.carousel-item.active.carousel-item-end {
+  transform: translateY(100%) !important;
+}
+.carousel-item.carousel-item-prev {
+  transform: translateY(-100%) !important;
+}
