@@ -49,56 +49,62 @@ header{
         }
     }
 }
-.jumbotron{
+#jumbotron{
     background-color: $background-dark;
     color: white;
-    .carousel {
-        &-inner {
-            min-height: 100px;
-            float: none;
-            @include media-breakpoint-up(sm) { 
-                max-height: 250px;
-               }
-              @include media-breakpoint-up(md) { 
-                max-height: 500px;
-               }
-              @include media-breakpoint-up(lg) { 
-                max-height: 711px;
-               }
-              @include media-breakpoint-up(xl) { 
-                max-height: 711px;
-               }
-              @include media-breakpoint-up(xxl) { 
-                max-height: 711px;
-               }
+    .splide__slide {
+        background-position: 100px;
+        background-size: 910px 528px;
+        background-repeat: no-repeat;
+        img {
+            display: none;
         }
-        &-item {
-            float: none;
-            margin-right: 0;
-            &-next:not(.carousel-item-start){
-                transform: translateY(100%) !important;
-            }
-            &-prev:not(.carousel-item-end){
-                transform: translateY(-100%) !important;
-            }
-        }
-        &-indicators{
-            align-items: center;
+        .splide_container {
+            align-content: flex-end;
+            align-items: flex-end;
+            display: flex;
             flex-direction: column;
-            width: 20px;
-            margin-left: 0;
-            margin-right: 36px;
-            left: inherit;
-            bottom: inherit;
-            top: calc(50% - 52px);
-            button{
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-right: 100px;
+            h3 {
+                @include roboto(900);
+                @include font-size(52);
+                max-width: 570px;
+                text-align: right;
+            }
+            p {
+                @include roboto(200);
+                @include font-size(14);
+                text-align: right;
+                width: 426px;
+            }
+            a {
+                color: white;
+                @include roboto(200);
+                @include font-size(14);
+                font-style: italic;
+                text-decoration: none;
+                i {
+                    font-size: 22px;
+                    margin-left: 10px;
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+    }
+    .splide__pagination {
+        li {
+            .splide__pagination__page {
                 background-color: $lighten-grey-2;
-                border-radius: 50%;
                 height: 12px;
+                transition: all linear .25s;
                 width: 12px;
-                &.active {
+                &.is-active{
                     background-color: $backgraund-cyan;
                     height: 20px;
+                    transform: none;
                     width: 20px;
                 }
             }
