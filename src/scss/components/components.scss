@@ -53,7 +53,7 @@ header{
     background-color: $background-dark;
     color: white;
     .splide__slide {
-        background-position: 100px;
+        background-position: 50px 100px;
         background-size: 910px 528px;
         background-repeat: no-repeat;
         img {
@@ -119,4 +119,55 @@ div.splide.splide__mobile {
             justify-content: space-between;
         } 
     }
+    .splide__pagination__page{
+        background-color: $lighten-grey-9;
+        &.is-active {
+            background-color: $backgraund-cyan;
+        }
+    }
+    &.splide__home--counter{
+      figure {
+        max-width: 270px;
+        figcaption {
+          @include roboto(300);
+          @include font-size(16);
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+    }
+}
+
+table.charts-css.pie {
+  width: 170px;
+  max-width: 170px;
+  margin: 1px auto;
+  position: relative;
+  tr {
+    &:first-child {
+      height: 100%;
+      width: 100%;
+      th {
+        align-items: center;
+        background-color: white;
+        border-radius: 50%;
+        clip: initial;
+        clip-path: none;
+        display: flex;
+        height: calc(100% - 20px);
+        justify-content: center;
+        position: relative;
+        overflow: visible;
+        width: calc(100% - 20px);
+        left: 11px;
+        top: 10px;
+        z-index: 1;
+        span {
+          @include roboto(700);
+          @include font-size(40);
+          color: $lighten-black-5;
+        }
+      }
+    }
+  }
 }

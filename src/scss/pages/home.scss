@@ -1,0 +1,16 @@
+.content_block {
+  padding-top: 20px;
+  h2 {
+    @include roboto(800);
+    @include font-size(42);
+    line-height: 64px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  .text-block {
+    margin-bottom: 25px;
+    p {
+      text-align: center;
+    }
+  }
+}

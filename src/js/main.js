@@ -13,8 +13,8 @@ new Splide( '.splide__mobile', {
     arrows: false,
     gap: '15px',
     padding: { left: '1rem', right: '1rem' },
-    perPage: 1,
     perMove: 1,
+    rewind : true,
     height: '220px',
     snap: false,
     drag: true,
@@ -22,9 +22,15 @@ new Splide( '.splide__mobile', {
     breakpoints: {
       768: {
         height: '370px',
+        perPage: 2,
+      },
+      1200: {
+        height: '370px',
+        perPage: 3,
       },
       1300: {
-        destroy: true
+        destroy: true,
+        perPage: 4,
       }
     }
 } ).mount();
