@@ -111,3 +111,12 @@ header{
         }
     }
 }
+div.splide.splide__mobile {
+    &.is-initialized:not(.is-active){
+        .splide__list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        } 
+    }
+}
