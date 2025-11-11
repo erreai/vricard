@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+$bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "bootstrap-icons/font/bootstrap-icons";
 .lato{
   font-family: "Lato", sans-serif;
     &-thin{
@@ -48,6 +50,13 @@
     @extend .roboto;
     font-weight: $WEIGHT;
 }
-@mixin font-size($value) {
+@mixin font-size($value, $line: false) {
       font-size: pxToRem($value)+rem;
+      @if($line) {
+        line-height: (pxToRem($value)*2.1)+rem;
+      }
+}
+%subtleText {
+    color: #fff;
+    opacity: .5;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="scss/styles.scss">
+    <script src="https://kit.fontawesome.com/169b843fd6.js" crossorigin="anonymous"></script>
     <script type="module" src="./js/main.js"></script>
   </head>
   <body>
@@ -94,28 +95,363 @@
             </div>
         </header>
         <!-- contenido -->
-        <div class="jumbotron">
+        <div id="jumbotron">
             <div class="container">
-                
-                <section class="splide" aria-label="Splide Basic HTML Example">
+                <section class="splide splide__ttb" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                           <ul class="splide__list">
-                              <li class="splide__slide">
-                                <div>
-                                    <img src="https://place-hold.it/910x528" class="d-block w-100" alt="...">
+                              <li class="splide__slide jumbotron">
+                                <div class="splide_container">
+                                    <h3>Lorem Ipsum has been the standard dummy 1</h3>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                    <a href="#" class="">Ver más <i class="bi bi-arrow-right-circle"></i></a>
+                                    <img src="img/fotos-slider.png" alt="...">
                                 </div>
                               </li>
-                              <li class="splide__slide">
-                                <div>
-                                    <img src="https://place-hold.it/910x528" class="d-block w-100" alt="...">
+                              <li class="splide__slide jumbotron">
+                                <div class="splide_container ">
+                                    <h3>Lorem Ipsum has been the standard dummy 2</h3>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                    <a href="#" class="">Ver más <i class="bi bi-arrow-right-circle"></i></a>
+                                    <img src="https://place-hold.it/910x528" alt="...">
                                 </div>
                               </li>
-                              <li class="splide__slide">
-                                <div>
-                                    <img src="https://place-hold.it/910x528" class="d-block w-100" alt="...">
+                              <li class="splide__slide jumbotron">
+                                <div class="splide_container ">
+                                    <h3>Lorem Ipsum has been the standard dummy 3</h3>
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                    <a href="#" class="">Ver más <i class="bi bi-arrow-right-circle"></i></a>
+                                    <img src="https://place-hold.it/910x528" alt="...">
                                 </div>
                               </li>
                           </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="the_content">
+            <div class="container">
+                <section class="row content_block justify-content-center">
+                    <div class="col-10">
+                        <h2>Sobre Nosotros</h2>
+                        <div class="text-block">
+                            <p>La Vicerrectoría de Investigación, Creación Artística y Doctorado, VRICAD, <strong>fue creada en 2023</strong> como parte de un proceso de consolidación de la investigación en la Universidad Finis Terrae. Su antecedente más remoto fue la fundación del Centro de Investigación y Documentación, <strong>CIDOC</strong>, en 1993, primer hito en la institucionalización del conocimiento en la universidad.</p>
+                        </div>
+                    </div>
+                    <div class="splide splide__mobile splide__home--counter">
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                  <li class="splide__slide">
+                                    <figure>
+                                        <table class="charts-css pie">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <span class="number number--animated icon-plus" data-value="1234">+1234</span>
+                                                    </th>
+                                                    <td style="--start: 0.0; --end: 0.9;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="--start: 0.9; --end: 1;"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <figcaption>Artículos publicaciones entre 2022 y 2024</figcaption>
+                                    </figure>
+                                  </li>
+                                  <li class="splide__slide">
+                                    <figure>
+                                        <table class="charts-css pie">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="number number--animated icon-percent" data-value="52">52%</span>
+                                                </th>
+                                                <!-- El valor del número añadido, en este caso, 52, tiene que pasar al end y al start del gráfico -->
+                                                <td style="--start: 0.0; --end: 0.52;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="--start: 0.52; --end: 1;"></td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        <figcaption>De las publicaciones de 2024 son Scopus Q1</figcaption>
+                                    </figure>
+                                  </li>
+                                  <li class="splide__slide">
+                                    <figure>
+                                        <table class="charts-css pie">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="number number--animated icon-degree" data-value="4">4°</span>
+                                                </th>
+                                                <td style="--start: 0.0; --end: 0.10;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="--start: 0.10; --end: 1;"></td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        <figcaption>Lugar nacional en eficiencia de adjudicaciones Fondecyt Post doctorado</figcaption>
+                                    </figure>
+                                  </li>
+                                  <li class="splide__slide">
+                                    <figure>
+                                        <table class="charts-css pie">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span class="number number--animated icon-degree" data-value="1">1°</span>
+                                                </th>
+                                                <td style="--start: 0.0; --end: 0.10;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="--start: 0.10; --end: 1;"></td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        <figcaption>Lugar nacional en ciencias del ejercicio Ranking de Shanghái</figcaption>
+                                    </figure>
+                                  </li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="col-10 d-flex justify-content-center">
+                        <a href="#" class="btn btn-outline-secondary">Ir a Sobre Nosotros</a>
+                    </div>
+                </section>
+                <section class="row content_block justify-content-center">
+                    <div class="col-10">
+                        <h2>Direcciones</h2>
+                        <div class="text-block">
+                            <p>La Vicerrectoría de Investigación, Creación Artística y Doctorado, VRICAD, <strong>fue creada en 2023</strong> como parte de un proceso de consolidación de la investigación en la Universidad Finis Terrae. Su antecedente más remoto fue la fundación del Centro de Investigación y Documentación, <strong>CIDOC</strong>, en 1993, primer hito en la institucionalización del conocimiento en la universidad.</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="btn-group">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                Seleccionar Dirección
+                                </button>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                                </ul>
+                            </div>
+                            <a id="link--direccion" href="#" class="link link__solid link__dropdown--centered">IR</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="row content_block">
+                    <div class="box box_content box_content--ltr">
+                        <div class="box_content--img liquifyImage">
+                            <img src="https://place-hold.it/477x407" alt="">
+                        </div>
+                        <div class="box_content--body">
+                            <h3>Financiamiento</h3>
+                            <strong>Subtítulo lorem ipsum dolor asmet simply dummy text of the printing and typesettin</strong>
+                            <p>Para potenciar la producción científica, la Universidad Finis Terrae a través de la Vicerrectoría de Investigación, Creación Artística y Doctorado ha dispuesto fondos concursables internos e incentivos orientados a respaldar iniciativas y proyectos en distintas áreas, asegurando así su compromiso con el desarrollo de la investigación de excelencia.</p>
+                            <a href="#" class="link link--more">Leer más <i class="bi bi-arrow-right-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box box_content box_content--rtl">
+                        <div class="box_content--img liquifyImage">
+                            <img src="https://place-hold.it/477x407" alt="">
+                        </div>
+                        <div class="box_content--body">
+                            <h3>Producción y divulgación científica</h3>
+                            <strong>Subtítulo lorem ipsum dolor asmet simply dummy text of the printing and typesettin</strong>
+                            <p><strong>Ciclo de conferencias</strong> que reúne a académicos e investigadores de la Universidad Finis Terrae para compartir sus líneas de investigación, abordándolas desde sus experiencias personales y trayectorias profesionales.</p>
+                            <p>Diálogos interdisciplinarios que vinculan las artes, las ciencias y las nuevas tecnologías, promoviendo un espacio de reflexión y aprendizaje con la comunidad universitaria.</p>
+                            <a href="#" class="link link--more">Revisa la programación 2025 y conoce a nuestros próximos invitados <i class="bi bi-arrow-right-circle"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container-fluid container--gray">
+                <section class="row content_block justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Noticias</h2>
+                        <div class="box box__masonry">
+                            <div class="box_content box_content--col">
+                                <img src="https://place-hold.it/338x406" alt="">
+                                <strong>Universidad Finis Terrae traza el camino hacia la equidad en ciencia y conocimiento</strong>
+                                <p>La Vicerrectoría de Investigación, Creación Artística y Doctorado convocó a un grupo de expertas de distintas áreas de la Universidad para participar en un focus group clave: el análisis y validación de su Huella de Género. Esta instancia se proyecta como el germen de un Comité para la Igualdad de Género en I+D.</p>
+                            </div>
+                            <div class="box_content box_content--col">
+                                <img src="https://place-hold.it/338x319" alt="">
+                                <strong>Universidad Finis Terrae traza el camino hacia la equidad en ciencia y conocimiento</strong>
+                                <p>La Vicerrectoría de Investigación, Creación Artística y Doctorado convocó a un grupo de expertas de distintas áreas de la Universidad para participar en un focus group clave: el análisis y validación de su Huella de Género. Esta instancia se proyecta como el germen de un Comité para la Igualdad de Género en I+D.</p>
+                            </div>
+                            <div class="box_content box_content--col">
+                                <img src="https://place-hold.it/338x231" alt="">
+                                <strong>Universidad Finis Terrae traza el camino hacia la equidad en ciencia y conocimiento</strong>
+                                <p>La Vicerrectoría de Investigación, Creación Artística y Doctorado convocó a un grupo de expertas de distintas áreas de la Universidad para participar en un focus group clave: el análisis y validación de su Huella de Género. Esta instancia se proyecta como el germen de un Comité para la Igualdad de Género en I+D.</p>
+                            </div>
+                            <div class="box_content box_content--col">
+                                <img src="https://place-hold.it/338x550" alt="">
+                                <strong>Universidad Finis Terrae traza el camino hacia la equidad en ciencia y conocimiento</strong>
+                                <p>La Vicerrectoría de Investigación, Creación Artística y Doctorado convocó a un grupo de expertas de distintas áreas de la Universidad para participar en un focus group clave: el análisis y validación de su Huella de Género. Esta instancia se proyecta como el germen de un Comité para la Igualdad de Género en I+D.</p>
+                            </div>
+                            <div class="box_content box_content--col">
+                                <img src="https://place-hold.it/338x318" alt="">
+                                <strong>Universidad Finis Terrae traza el camino hacia la equidad en ciencia y conocimiento</strong>
+                                <p>La Vicerrectoría de Investigación, Creación Artística y Doctorado convocó a un grupo de expertas de distintas áreas de la Universidad para participar en un focus group clave: el análisis y validación de su Huella de Género. Esta instancia se proyecta como el germen de un Comité para la Igualdad de Género en I+D.</p>
+                            </div>
+                            <div class="box_content box_content--col">
+                                <img src="https://place-hold.it/338x406" alt="">
+                                <strong>Universidad Finis Terrae traza el camino hacia la equidad en ciencia y conocimiento</strong>
+                                <p>La Vicerrectoría de Investigación, Creación Artística y Doctorado convocó a un grupo de expertas de distintas áreas de la Universidad para participar en un focus group clave: el análisis y validación de su Huella de Género. Esta instancia se proyecta como el germen de un Comité para la Igualdad de Género en I+D.</p>
+                            </div>
+                        </div>
+                        <div class="container d-flex justify-content-center pb-5">
+                            <a href="#" class="btn btn-outline-secondary">Ver todas las noticias</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container">
+                <section class="row content_block justify-content-center">
+                    <div class="col-lg-10 ">
+                        <h2>Yo investigo en la Finis Terrae</h2>
+                        <div class="box grid grid-pyramid">
+                            <div class="box-grid box-grid__profile">
+                                <div class="profile-info">
+                                    <strong>Caffarena Barcenilla Paula</strong>
+                                    <span>PhD</span>
+                                    <hr />
+                                    <p>Dirección de Innovacion y Transferencia Tecnológica</p>
+                                    <ul class="link__list link__list--rrss">
+                                        <li>
+                                            <a href="#" class="ring-outline">
+                                                <i class="fa-brands fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <img src="https://place-hold.it/294x294" alt="">
+                            </div>
+                            <div class="box-grid box-grid__profile">
+                                <div class="profile-info"></div>
+                                <img src="https://place-hold.it/294x294" alt="">
+                            </div>
+                            <div class="box-grid box-grid__profile">
+                                <div class="profile-info"></div>
+                                <img src="https://place-hold.it/294x294" alt="">
+                            </div>
+                            <div class="box-grid box-grid__profile">
+                                <div class="profile-info"></div>
+                                <img src="https://place-hold.it/294x294" alt="">
+                            </div>
+                            <div class="box-grid box-grid__profile">
+                                <div class="profile-info"></div>
+                                <img src="https://place-hold.it/294x294" alt="">
+                            </div>
+                            <div class="box-grid box-grid__profile">
+                                <div class="profile-info"></div>
+                                <img src="https://place-hold.it/294x294" alt="">
+                            </div>
+                            <div class="box-grid box-grid__profile">
+                                <div class="profile-info"></div>
+                                <img src="https://place-hold.it/294x294" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container d-flex justify-content-center pb-5 mt-5">
+                        <a href="#" class="btn btn-outline-secondary">Ver todos los investigadores</a>
+                    </div>
+                </section>
+            </div>
+            <div class="container-fluid container--gray">
+                <section class="row content_block justify-content-center">
+                    <div class="col-lg-10 justify-content-center">
+                        <h2>Investigaciones destacadas</h2>
+                        <div class="d-flex justify-content-center">
+                            <div class="btn-group" role="group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-primary" for="btnradio1">Entrevistas</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio2">Videos</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio3">Galería de imágenes</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="row content_block">
+                    <div class="box box_content box_content--ltr">
+                        <div class="box_content--img liquifyImage">
+                            <img src="https://place-hold.it/477x407" alt="">
+                        </div>
+                        <div class="box_content--body">
+                            <span>Darika Samak I Investigadora de Creación Artística</span>
+                            <h3>Académica de la Facultad de Derecho analiza los efectos de los algoritmos en la libertad del consumidor (25 nov 2024)</h3>
+                            <p>Para potenciar la producción científica, la Universidad Finis Terrae a través de la Vicerrectoría de Investigación, Creación Artística y Doctorado ha dispuesto fondos concursables internos e incentivos orientados a respaldar iniciativas y proyectos en distintas áreas, asegurando así su compromiso con el desarrollo de la investigación de excelencia.</p>
+                            <a href="#" class="link link--more">Leer más <i class="bi bi-arrow-right-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="box box_content box_content--rtl">
+                        <div class="box_content--img liquifyImage">
+                            <img src="https://place-hold.it/477x407" alt="">
+                        </div>
+                        <div class="box_content--body">
+                            <span>Darika Samak I Investigadora de Creación Artística</span>
+                            <h3>Investigadores españoles visitan la U. FinisTerrae con innovador estudio sobre el dopaje (9 de mayo 2024)</h3>
+                            <p><strong>Ciclo de conferencias</strong> que reúne a académicos e investigadores de la Universidad Finis Terrae para compartir sus líneas de investigación, abordándolas desde sus experiencias personales y trayectorias profesionales.</p>
+                            <p>Diálogos interdisciplinarios que vinculan las artes, las ciencias y las nuevas tecnologías, promoviendo un espacio de reflexión y aprendizaje con la comunidad universitaria.</p>
+                            <a href="#" class="link link--more">Revisa la programación 2025 y conoce a nuestros próximos invitados <i class="bi bi-arrow-right-circle"></i></a>
+                        </div>
+                    </div>
+                </section>
+                <div class="container d-flex justify-content-center pb-5 mt-5">
+                    <a href="#" class="btn btn-outline-secondary">Ver todoas las entrevistas</a>
+                </div>
+            </div>
+            <div class="container">
+                <section class="row content_block justify-content-center">
+                    <div class="col-lg-10 ">
+                        <h2>Financiamiento</h2>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                    </div>
+                    <div class="d-flex justify-content-center my-4">
+                        <div class="btn-group" role="group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btn-menu-financiamiento1" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btn-menu-financiamiento1">Financiamiento Interno</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btn-financiamiento2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btn-financiamiento2">Financiamiento Externo</label>
+                        </div>
+                    </div>
+                </section>
+                <section class="row content_block justify-content-center">
+                    <div class="col-lg-3 order-1 order-md-2">
+                        calendario
+                    </div>
+                    <div class="col-lg-7 order-2 order-md-1">
+                        <div class="box box--event">
+                            <div class="img">
+                                <img src="https://www.place-hold.it/184x158" alt="">
+                            </div>
+                            <div class="event-body">
+                                <strong>Vive Semana Santa en la Universidad</strong>
+                                <span>Dirección de Creación artística</span>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Loremhat</p>
+                            </div>
+                            <div class="date">
+                                <span>17</span>
+                                <span>Nov.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container d-flex justify-content-center pb-5 mt-5">
+                        <a href="#" class="btn btn-outline-secondary">Ir a Financiamiento</a>
                     </div>
                 </section>
             </div>
