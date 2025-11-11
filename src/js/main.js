@@ -35,15 +35,29 @@ new Splide( '.splide__mobile', {
     }
 } ).mount();
 // Liquify jumbotron home
+let liquifyImage = (theContainer) => {
+    let imageContainer, image;
+    imageContainer = theContainer.parentElement;
+    image = theContainer.querySelector('img');
+    console.log(image, imageContainer);
+    const { attributes } = image;
+    image.style.visibility = "hidden";
+    theContainer.style.backgroundImage = 'url(' + attributes.src.nodeValue + ')';
+    //imageContainer.style.height = imageContainer.parentElement.clientHeight + 'px';
+};
 if (document.getElementById('jumbotron')) {
-    let $jumbotrolSlides, $jumboImg, $jumboContent;
+    let $jumbotrolSlides;
     $jumbotrolSlides = document.querySelectorAll('li.jumbotron');
     $jumbotrolSlides.forEach(element => {
-        $jumboImg = element.querySelector('img');
-        $jumboContent = element.querySelector('.splide_container');
-        const { attributes } = $jumboImg;
-        element.style.backgroundImage = 'url(' + attributes.src.nodeValue + ')';
-        $jumboContent.style.height = $jumboContent.parentElement.clientHeight + 'px';
+        liquifyImage(element);
+    });
+}
+if (document.getElementsByClassName('liquifyImage')) {
+    let $IMAGES;
+    $IMAGES = document.querySelectorAll('.liquifyImage');
+    console.log($IMAGES);
+    $IMAGES.forEach(element => {
+        liquifyImage(element);
     });
 }
 // Animated counter

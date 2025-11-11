@@ -1,3 +1,10 @@
+
+%responsiveColToRow{
+    @include media-breakpoint-down(lg) { 
+        flex-direction: column !important;
+    }
+}
+
 .navbar{
     @extend .container;
     &.top-nav {
@@ -170,4 +177,40 @@ table.charts-css.pie {
       }
     }
   }
+}
+
+.box {
+    &_content {
+        display: flex;
+        &--rtl {
+            @extend %responsiveColToRow;
+            flex-direction: row-reverse;
+
+        }
+        &--ltr {
+            @extend %responsiveColToRow;
+            flex-direction: row;
+
+        }
+        &--img {
+            @extend .liquifyImage;
+        }
+    }
+}
+.liquifyImage {
+    @include media-breakpoint-up(sm) { 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    @include media-breakpoint-up(md) { 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    @include media-breakpoint-up(lg) { 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
 }
