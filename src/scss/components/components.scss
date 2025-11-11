@@ -261,7 +261,12 @@ table.charts-css.pie {
         }
     }
     &--event {
+        display: flex;
         position: relative;
+        .event-body {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 .liquifyImage {
