@@ -50,6 +50,13 @@ $bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
     @extend .roboto;
     font-weight: $WEIGHT;
 }
-@mixin font-size($value) {
+@mixin font-size($value, $line: false) {
       font-size: pxToRem($value)+rem;
+      @if($line) {
+        line-height: (pxToRem($value)*2.1)+rem;
+      }
+}
+%subtleText {
+    color: #fff;
+    opacity: .5;
 }
