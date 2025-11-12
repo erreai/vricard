@@ -20,3 +20,88 @@
     margin-top: 20px;
   }
 }
+div.fc .fc{
+    &-toolbar{
+        display: flex;
+        &-title {
+            @include font-size(16);
+            @include roboto(500);
+            text-transform: capitalize;
+        }
+        .btn.btn-primary.fc-today-button {
+            display: none;
+        }
+        .btn.btn-primary {
+            display: flex;
+            background-color: #d9d9d9;
+            border-color: #d9d9d9;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            font-size: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            &:hover,&:focus {
+                background-color: $lighten-black-9;
+            }
+        }
+        &-chunk {
+            .btn-group{
+                width: 60px;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: row;
+                .btn {
+                    flex: 0 0 auto;
+                }
+            }
+        }
+        &.fc-header-toolbar {
+            max-height: 20px;
+        }
+    }
+    &-daygrid-body-unbalanced{
+        &.fc-daygrid-day-events {
+            max-height: 15px;
+        }
+    }
+    &-daygrid-day-events {
+        display: none;
+    }
+    
+}
+div.fc {
+    .fc-daygrid-day-number{
+        color: #7F7D7D;
+        @include font-size(13);
+        @include roboto(400);
+        padding-top: 5px;
+    }
+}
+.fc .fc-daygrid-day-top {
+    justify-content: center;
+}
+.fc-theme-bootstrap5 .fc-list, .fc-theme-bootstrap5 .fc-scrollgrid, .fc-theme-bootstrap5 td, .fc-theme-bootstrap5 th {
+    border: none;
+}
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: $lighten-grey-11;
+}
+.fc .has-events a{
+    background-color: #979797;
+    border-radius: 3px;
+    color: #fff;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+}
+.light-bg {
+    background-color: #f9f9fb;
+}
+.fc .fc-scrollgrid-section-sticky > * {
+    background-color: transparent;
+}
+.fc table {
+    @include font-size(13);
+}

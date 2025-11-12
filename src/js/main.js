@@ -98,15 +98,30 @@ if(calendarEl){
     initialView: 'dayGridMonth',
     locale: esLocale,
     themeSystem: 'bootstrap5',
-    datesSet: function(info) {
-      setTimeout(() => {
-        let titleEl = document.querySelector('.fc-toolbar-title');
-        if (titleEl) {
-           titleEl.textContent = titleEl.textContent.replace(/\bde\b\s*/gi, '').trim();
-        }
-      }, 0);
+    height: 'auto',
+    dayHeaderContent: (arg) => {
+      const customNames = ['L', 'M', 'M', 'J', 'V', 'S','D'];
+      return customNames[arg.date.getDay()];
+    },
+    events: [
+    {
+      id: 'a',
+      title: 'my event',
+      start: '2025-11-19'
     }
+  ]
 
   });
   calendar.render();
+
+  let $EventsOnCalendar = document.getElementsByClassName('fc-event')
+  if ($EventsOnCalendar) {
+    for (let i = 0; i < $EventsOnCalendar.length; i++) {
+      const element = $EventsOnCalendar[i];
+      let theDay = element.parentElement.parentElement.parentElement;
+      theDay.classList.add("has-events");
+      
+      
+    }
+  }
 }
