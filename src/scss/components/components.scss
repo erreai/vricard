@@ -4,7 +4,7 @@
         flex-direction: column !important;
     }
 }
-.container + * {
+div.container + * {
     margin-top: 80px;
     padding-top: 70px;
 }
@@ -244,14 +244,14 @@ table.charts-css.pie {
             }
         }
     }
-    &:not(:first-child) {
+    &:not(:first-child):not(.box--event) {
         margin-top: 60px;
     }
     &__masonry {
         display: flex;
         flex-flow: column wrap;
         @include media-breakpoint-up(lg) { 
-            height: 1500px;
+            height: 1510px;
         }
         > * {
             padding: 0 7px;
@@ -261,11 +261,50 @@ table.charts-css.pie {
         }
     }
     &--event {
+        background-color: $lighten-grey-13;
+        box-shadow: 6px 6px 8px 0px rgba(0,0,0,0.25);
         display: flex;
+        margin-bottom: 20px;
+        padding: 32px 35px;
         position: relative;
         .event-body {
             display: flex;
             flex-direction: column;
+            margin-left: 20px;
+            padding-right: 100px;
+            strong  {
+                @include roboto(600);
+                @include font-size(18);
+            }
+            span {
+                @include roboto(300);
+                @include font-size(13);
+            }
+            p {
+                margin-top: 25px;
+            }
+        }
+        .date {
+            background-color: $base-orange;
+            height: 110px;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+            width: 103px;
+            span {
+                color: #fff;
+                &:first-child {
+                    @include roboto(800);
+                    @include font-size(56);
+                }
+                &:not(:first-child) {
+                    display: block;
+                    @include roboto(600);
+                    @include font-size(28);
+                    transform: translateY(-20px);
+                }
+            }
         }
     }
 }
@@ -451,4 +490,14 @@ table.charts-css.pie {
 }
 .btn-outline-secondary {
     font-style: italic;
+}
+div.fc .fc{
+    &-toolbar{
+        display: flex;
+        &-title {
+            @include font-size(18);
+            @include roboto(500);
+            text-transform: capitalize;
+        }
+    }
 }

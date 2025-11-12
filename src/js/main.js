@@ -5,6 +5,11 @@ import '@splidejs/splide/css';
 
 // Import all of Bootstrap’s JS
 import * as bootstrap from 'bootstrap'
+import * as FullCalendar from 'fullcalendar';
+import esLocale from '@fullcalendar/core/locales/es';
+import bootstrap5Plugin from '@fullcalendar/bootstrap5';
+
+
 import Splide from '@splidejs/splide';
 new Splide( '.splide__ttb', {direction: 'ttb', height   : '710px', arrows: false, autoplay: 'pause'} ).mount();
 new Splide( '.splide__mobile', {
@@ -84,3 +89,24 @@ let $arrayNumberIncrement = document.getElementsByClassName('number--animated');
       animateValue(element, 0, value, 1000);
     }
   }
+
+let calendarEl = document.getElementById('calendar');
+if(calendarEl){
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    plugins: [ bootstrap5Plugin ],
+    initialView: 'dayGridMonth',
+    locale: esLocale,
+    themeSystem: 'bootstrap5',
+    datesSet: function(info) {
+      setTimeout(() => {
+        let titleEl = document.querySelector('.fc-toolbar-title');
+        if (titleEl) {
+           titleEl.textContent = titleEl.textContent.replace(/\bde\b\s*/gi, '').trim();
+        }
+      }, 0);
+    }
+
+  });
+  calendar.render();
+}
