@@ -251,7 +251,7 @@ table.charts-css.pie {
         display: flex;
         flex-flow: column wrap;
         @include media-breakpoint-up(lg) { 
-            height: 1510px;
+            height: 1360px;
         }
         > * {
             padding: 0 7px;
@@ -491,13 +491,61 @@ table.charts-css.pie {
 .btn-outline-secondary {
     font-style: italic;
 }
-div.fc .fc{
-    &-toolbar{
-        display: flex;
-        &-title {
-            @include font-size(18);
+
+.aside {
+    &__header {
+        &--calendar {
+            h5 {
+                @include font-size(16);
+                @include roboto(600);
+                margin: 20px 0 35px;
+                text-align: center;
+            }
+        }
+    }
+}
+#eventList {
+    border-top: 1px dotted #ccc;
+    margin-top: 20px;
+    h5 {
+        @include font-size(18);
+        @include roboto(500);
+        margin: 20px 0;
+        text-align: center;
+    }
+    .eventList {
+        padding: 0;
+        li {
+            background-color: #fff;
+            border-radius: 5px;
+            display: flex;
+            list-style: none;
+            margin-bottom: 20px;
+            padding-right: 5px;
+        }
+        .date {
+            background-color: $base-orange;
+            border-radius: 5px 0 0 5px;
+            color: #fff;
+            display: flex;
+            flex-direction: column-reverse;
+            @include font-size(28);
             @include roboto(500);
-            text-transform: capitalize;
+            max-width: 90px;
+            padding: 15px 22px;
+            text-align: center;
+        }
+        .data {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 15px;
+            p {
+                color: $base-grey;
+                @include font-size(16);
+                @include roboto(400);
+                margin-bottom: 0;
+            }
         }
     }
 }
